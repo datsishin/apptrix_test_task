@@ -1,1 +1,1 @@
-from rest_framework import serializersfrom .models import Userclass UserSerializers(serializers.ModelSerializer):    class Meta:        model = User        fields = '__all__'
+from rest_framework import serializersfrom .models import User, Likeclass UserSerializers(serializers.ModelSerializer):    class Meta:        model = User        fields = '__all__'class LikeSerializers(serializers.ModelSerializer):    class Meta:        model = Like        fields = '__all__'
