@@ -11,3 +11,5 @@ class User(models.Model):
     gender = models.CharField(max_length=1, verbose_name='Пол пользователя', choices=gender_choices, default='М')
     avatar = models.ImageField(verbose_name='Аватар пользователя')
     email = models.EmailField(max_length=254)
+    lon = models.DecimalField(verbose_name='Долгота местонахождения пользователя', max_digits=8)
+    lat = models.DecimalField(verbose_name='Широта местонахождения пользователя', max_digits=8)
