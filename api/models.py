@@ -9,7 +9,7 @@ class User(models.Model):
         ('Ж', 'Женщина')
     ]
     gender = models.CharField(max_length=1, verbose_name='Пол пользователя', choices=gender_choices, default='М')
-    avatar = models.ImageField(verbose_name='Аватар пользователя')
+    avatar = models.ImageField(verbose_name='Аватар пользователя', upload_to='avatars/%Y/%m/%d/', null=True, blank=True)
     email = models.EmailField(max_length=254)
     lon = models.DecimalField(verbose_name='Долгота местонахождения пользователя', max_digits=8,
                               decimal_places=6, null=True, blank=True)

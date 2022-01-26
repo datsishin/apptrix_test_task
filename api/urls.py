@@ -1,1 +1,1 @@
-from django.urls import pathfrom . import viewsurlpatterns = [    path('user/create/', views.UserViewSet.as_view({'post': 'create', }))]
+from django.urls import pathfrom . import viewsurlpatterns = [    path('clients/create/', views.UserViewSet.as_view({'post': 'create', }))]
