@@ -1,1 +1,1 @@
-web: gunicorn dating_app.wsgi --log-file -" > Procfile
+web: gunicorn dating_app.wsgi
