@@ -156,7 +156,7 @@ STATIC_URL = '/Users/egor_datsishin/Dev/apptrix_test_task/static'
 
 # Extra lookup directories for collectstatic to find static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, '/Users/egor_datsishin/Dev/apptrix_test_task/static'),
+    os.path.join(PROJECT_ROOT, 'static'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
