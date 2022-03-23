@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'dating_app.urls'
@@ -157,3 +158,5 @@ STATIC_URL = '/Users/egor_datsishin/Dev/apptrix_test_task/static'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, '/Users/egor_datsishin/Dev/apptrix_test_task/static'),
 )
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
