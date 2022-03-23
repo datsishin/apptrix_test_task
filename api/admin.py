@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import User
+from .models import CustomUser, Like
 
 
 class UserAdmin(admin.ModelAdmin):
@@ -10,4 +10,12 @@ class UserAdmin(admin.ModelAdmin):
     empty_value_display = '-пусто-'
 
 
-admin.site.register(User, UserAdmin)
+class LikeAdmin(admin.ModelAdmin):
+    list_display = ('user', 'follower',)
+    search_fields = ('user', 'follower',)
+    list_filter = ('user', 'follower',)
+    empty_value_display = '-пусто-'
+
+
+admin.site.register(CustomUser, UserAdmin)
+admin.site.register(Like, LikeAdmin)
