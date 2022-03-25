@@ -1,1 +1,0 @@
-# from django_filters import filters## from dating_app.api.models import User### class UserFilter(filters.FilterSet):#     area_distance = filters.CharFilter(field_name='area_distance')##     class Meta:#         model = User#         fields = ['lon', 'lat']

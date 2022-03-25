@@ -20,14 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ.get('SECRET_KEY')
+
 SECRET_KEY = 'django-insecure-sqik)fvz%ec2d!t6$dm5+)hf(st+ao$*5=otjaboldt=ig6a#o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-# 'localhost', '127.0.0.1'
 
 # Application definition
 
@@ -157,10 +156,3 @@ AUTH_USER_MODEL = 'api.CustomUser'
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
-
-# Extra lookup directories for collectstatic to find static files
-# STATICFILES_DIRS = (
-#     os.path.join(PROJECT_ROOT, 'static'),
-# )
-
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
