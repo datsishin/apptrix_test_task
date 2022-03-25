@@ -1,10 +1,10 @@
+from dating_app.settings import MEDIA_AVATARS_DIR
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.db import models
 from imagekit.models import ProcessedImageField
 
-from dating_app.dating_app.settings import MEDIA_AVATARS_DIR
 from .processors import Watermark
 
 
